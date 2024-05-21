@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <!-- il div che contiene l'app creata da vue in main.js -->
+    <div id="app">
+        {{ title }}
+
+        <!-- @click è una shortcut di v-on:click che aggiunge un event listener all elemento -->
+        <button @click="prova">
+            Clicca qui
+        </button>
+
+        <img :src="imgSrc" alt="">
+
+    </div>
+
+
+
+
+
+    <!-- vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- my js script -->
+    <script src="./main.js"></script>
+</body>
+</html>
